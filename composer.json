@@ -1,0 +1,20 @@
+{
+    "name": "josephd/mysql-to-statamic",
+    "description": "Converts data from Laravel-style MySQL database to Statamic YAML collections",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Josephd\\MysqlToStatamic\\": "src/"
+        }
+    },
+    "require": {
+        "statamic/cms": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Josephd\\MysqlToStatamic\\ServiceProvider"
+            ]
+        }
+    }
+}
