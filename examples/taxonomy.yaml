@@ -1,0 +1,18 @@
+table:
+  name: table_name
+  fields:
+    title:
+      from: name
+      type: text
+    slug:
+      from: slug
+      type: text
+    content:
+      from: description
+      type: text
+destination:
+  type: taxonomy
+  collectionName: collection_name
+imageLinks:
+  prefix: null
+  assetTag: null

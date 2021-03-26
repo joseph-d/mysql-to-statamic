@@ -1,0 +1,35 @@
+table:
+  limit: 5
+  name: table_name
+  date: published_at
+  fields:
+    title:
+      from: name
+      type: text
+    slug:
+      from: slug
+      type: text
+    intro:
+      from: intro
+      type: text
+    outro:
+      from: outro
+      type: text
+    interview:
+      from: interview
+      type: json
+      jsonFields:
+        type: type
+        content: text
+      imageLinks:
+        prefix: https://url.prefix
+        assetTag: asset::assets::folder/
+    published:
+      from: published
+      type: boolean
+    updated_at:
+      from: updated_at
+      type: timestamp
+destination:
+  type: collection
+  collectionName: collection_name

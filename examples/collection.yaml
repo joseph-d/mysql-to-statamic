@@ -1,0 +1,37 @@
+table:
+  limit: 10
+  name: table_name
+  date: published_at
+  fields:
+    title:
+      from: title
+      type: text
+    slug:
+      from: slug
+      type: text
+    bloggers:
+      from: related_id
+      type: relation
+      relatedTable: related_table_name
+      relatedField: slug
+    subheading:
+      from: subheading
+      type: text
+    description:
+      from: summary
+      type: text
+    content:
+      from: content
+      type: text
+      imageLinks:
+        prefix: https://url.prefix
+        assetTag: asset::assets::folder/
+    published:
+      from: published
+      type: boolean
+    updated_at:
+      from: updated_at
+      type: timestamp
+destination:
+  type: collection
+  collectionName: collection_name

@@ -1,0 +1,25 @@
+table:
+  name: table_name
+  fields:
+    title:
+      from: name
+      type: text
+    enabled:
+      from: active
+      type: boolean
+    content:
+      from: description
+      type: text
+    link:
+      from: url
+      type: text
+    logo:
+      from: Namespaced\Model\Path
+      type: attachment
+destination:
+  type: global
+  collectionName: collection_name
+  replicatorName: replicator_name
+imageLinks:
+  prefix: null
+  assetTag: null
